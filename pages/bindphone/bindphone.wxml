@@ -1,0 +1,14 @@
+<view class='logo'>
+   <image src='http://ylbb-wxapp.oss-cn-beijing.aliyuncs.com/store/logo-large.png' mode='widthFix'></image> 
+</view>
+<form bindsubmit="submit" report-submit='true'>
+  <view class='ipt-box'>
+    <view class='ipt-icon'>+86</view>
+    <input placeholder="请输入您的手机号" type='number' maxlength="11" bindinput="phoneInput" placeholder-style="color:#b0b0b0" class='ipt-phone' auto-focus/>
+    <view class='ipt-code'>
+      <input placeholder="请输入短信验证码" focus="{{focus}}" type='number' maxlength="6" bindinput="codeInput" placeholder-style="color:#b0b0b0"/>
+      <view class='btn-code {{ getCodeTime == 60 ? "" : "active" }}' hover-class='active' bindtap='getCode'>{{ getCodeTime == 60 ? '获取验证码' : getCodeTime + 's后重新获取' }}</view>
+    </view>
+  </view>
+  <button class='ipt-submit' hover-class='active' form-type="submit" type="default">提 交</button>
+</form>

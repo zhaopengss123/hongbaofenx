@@ -1,0 +1,93 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wxce6688718ef525db",
+	"projectname": "%E7%BA%A2%E5%8C%85%E5%88%86%E4%BA%AB%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": 0,
+					"name": "门店小程序分享进来",
+					"pathName": "pages/index/index",
+					"query": "activityId=39&userPhone=15911038093&choice=1&storeId=1458&shareMoney=59"
+				},
+				{
+					"id": -1,
+					"name": "绑定手机",
+					"pathName": "pages/bindphone/bindphone",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "用户分享进来",
+					"pathName": "pages/index/index",
+					"query": "userPhone=15911038093&choice=1"
+				},
+				{
+					"id": 3,
+					"name": "已经分享",
+					"pathName": "pages/index/index",
+					"query": "shareUserPhone=15911038093&choice=1"
+				},
+				{
+					"id": 4,
+					"name": "测评官小程序进入",
+					"pathName": "pages/index/index",
+					"query": "activityId=2&userPhone=18501349124&choice=2"
+				},
+				{
+					"id": 5,
+					"name": "英语引流小程序进来",
+					"pathName": "pages/index/index",
+					"query": "userPhone=18345181496&activityId=3&choice=3"
+				},
+				{
+					"id": -1,
+					"name": "英语引流小程序分享进来",
+					"pathName": "pages/index/index",
+					"query": "shareUserPhone=15911038093&choice=3"
+				},
+				{
+					"id": 7,
+					"name": "用户分享进来",
+					"pathName": "pages/index/index",
+					"query": "userPhone=15911038093&activityId=4&choice=4"
+				}
+			]
+		}
+	}
+}

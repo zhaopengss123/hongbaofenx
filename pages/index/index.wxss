@@ -1,0 +1,413 @@
+/**index.wxss**/
+page{
+  background: #F55E4A;
+  width: 100%;
+  min-height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.content{
+width: 100%;
+height: 100%;
+ background: url(https://ylbb-business.oss-cn-beijing.aliyuncs.com/fenx45345345345das.png) no-repeat 0rpx -197rpx;
+ background-size: 750rpx 462rpx; 
+}
+
+.userIcon{
+  width: 140rpx;
+  height: 140rpx;
+  overflow: hidden;
+  padding-top: 140rpx;
+  margin: 0 auto;
+  
+}
+.userIcon view{
+  width: 130rpx;
+  height: 130rpx;
+  border: solid 5rpx #ED3F24;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: url(https://ylbb-wxapp.oss-cn-beijing.aliyuncs.com/store/usericon_mr.png) no-repeat;
+  background-size:100% 100%; 
+}
+.userIcon button{
+  width: 130rpx;
+  height: 130rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.userIcon text{
+  width: 100%;
+  text-align: center;
+  height: 130rpx;
+  line-height: 130rpx;
+  font-size: 20rpx;
+  display: block;
+  color: #fff;
+}
+.userText{
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 26rpx;
+  display: block;
+  margin-top: 35rpx;
+}
+.couner{
+  font-size: 100rpx;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+.couner text{
+  font-size: 26rpx;
+  font-weight: normal;
+  padding-left: 10rpx;
+}
+.couner_foot{
+  color: #FFF;
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 0rpx;
+}
+.withdraw{
+  color: #FFF;
+  font-size: 30rpx;
+  width: 215rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 45rpx;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 39rpx;
+  border: dashed 1px #fff;
+}
+.insufficient{
+  background: #ccc;
+  color: #666666;
+  font-size: 30rpx;
+  width: 259rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 45rpx;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 39rpx;
+}
+.friend_list{
+  width: 690rpx;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  padding-bottom: 30rpx;
+  border-radius: 10rpx;
+  margin-top: 60rpx;
+  margin-bottom: 270rpx;
+}
+.List_header{
+  width: 616rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.List_tit{
+  width: 50%;
+  float: left;
+  font-size: 25rpx;
+  color: #222222;
+}
+.List_rule{
+  width: 132rpx;
+  height: 39rpx;
+  line-height: 39rpx;
+  float: right;
+  color: #222;
+  font-size: 25rpx;
+  text-align: right;
+  text-decoration: underline ;
+}
+.List_header{
+  overflow: hidden;
+}
+.List_content{
+  width: 620rpx;
+  margin: 0 auto;
+  margin-top: 35rpx;
+   border-top: solid 1rpx #F5F5F5;
+}
+.userList{
+  width: 100%;
+  padding: 30rpx 0;
+  overflow: hidden;
+  clear: both;
+}
+.userList_icon{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.userList_icon image{
+  width: 100%;
+  height: 100%;
+}
+.userList_font{
+  float: left;
+  margin-left: 15rpx;
+}
+.userList_name{
+  font-size: 26rpx;
+  color: #666;
+  height: 35rpx;
+  line-height: 35rpx;
+}
+.userList_date{
+  font-size: 22rpx;
+  color: #888;
+}
+.userList_text{
+  float: right;
+  color: #222;
+  line-height: 70rpx;
+  font-size: 26rpx;
+}
+.userList_text text{
+  color: #FF2951;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.share{
+  position: fixed;
+  bottom: 0;
+  left: 0rpx;
+  width: 690rpx;
+  height: 262rpx;
+  background: #dc5442;
+  padding: 0 30rpx;
+}
+.share_main{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.share_border{
+  width: 100%;
+
+  margin-top: 30rpx;
+}
+.share_tit{
+      width: 100%;
+  background: #dc5442;
+  color: #fff;
+  text-align: center;
+  font-size: 26rpx;
+  margin-top: 44rpx;
+}
+
+.wx_share,.pyq_share{
+  width: 88rpx;
+  height: 88rpx;
+  float: left;
+  margin-top: 23rpx;
+  position: relative;
+}
+.allShare{
+   width: 88rpx;
+  height: 88rpx;
+  margin: 0 auto; 
+}
+.wx_share{
+  margin-left:194rpx;
+}
+.pyq_share{
+  margin-left:126rpx;
+}
+.wx_share image,.pyq_share image{
+  width: 100%;
+  height: 100%;
+}
+.wx_share text,.pyq_share text{
+  width: 106rpx;
+  display: block;
+  font-size: 26rpx;
+  color: #fff;
+  text-align: center;
+}
+/* .canvas_main{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+} */
+.canvas_main canvas{
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+
+
+  
+}
+.getUserInfo{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.9);
+}
+.UserInfo_main{
+  width: 690rpx;
+  height:300rpx;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 300rpx;
+  border-radius: 10rpx;
+
+  overflow: hidden;
+}
+.UserInfo_main button{
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border:solid 1rpx  #666;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50rpx;
+  font-size: 32rpx;
+}
+.UserInfo_main text{
+  color: #666;
+  font-size: 32rpx;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 80rpx;
+}
+.noShareList{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #ccc;
+}
+.wx_share button,.pyq_share button,.allShare button{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.clickImage{
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 1);
+position: fixed;
+top: 0;
+left: 0;
+z-index: 50;
+}
+.clickImage image{
+  width: 560rpx;
+  height: 806rpx;
+  display: block;
+  margin: 0 auto;
+  padding-top: 200rpx;
+
+}
+.activityRule{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.activityMain{
+  width: 500rpx;
+  height: 500rpx;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 200rpx;
+  border-radius: 10rpx;
+  padding: 50rpx;
+  position: relative;
+  padding-bottom: 100rpx;
+}
+.activityMain text{
+  width: 100%;
+  display: block;
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+.activityRuleClose{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+  border: solid 1px #ccc; 
+  border-radius: 10rpx;
+  margin-top: 40rpx;
+
+}
+.keepImg{
+  width: 670rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 auto;
+  border-radius: 0;
+  background: #ED3F24;
+  color: #fff;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+.keepImg.cli{
+   width: 600rpx;
+}
+.closecanvas{
+  width: 670rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  margin: 0 auto;
+  border-radius: 0;
+  background:#eee;
+  color: #999;
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+.closecanvas.cli{
+   width: 600rpx;
+}
+.userText_btn{
+  position: relative;
+}
+.userText_btn button{
+  width: 300rpx;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 225rpx;
+  opacity: 0;
+}

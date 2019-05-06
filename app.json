@@ -1,0 +1,17 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/bindphone/bindphone"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "navigateToMiniProgramAppIdList": [
+      "wx15bc903bd3ce9d4a",
+      "wxe82911cb7ee5ccbd",
+      "wx32f222ff90410043"
+    ]
+}

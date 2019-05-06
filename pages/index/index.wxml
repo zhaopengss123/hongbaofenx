@@ -1,0 +1,90 @@
+
+  <!-- 分享朋友圈图片 -->
+<view class='canvas_main' hidden='{{iscanvas}}'>
+  <canvas  style='width:{{canvasWidth}}px; height:{{canvasHeight}}px' canvas-id='canvasimage'></canvas>
+  <button class='keepImg {{ openBTn ? "" : "cli" }}' wx:if="{{isaccredit}}"   bindtap='wxsaveImage'>点击保存图片</button>
+  <button class='keepImg {{ openBTn ? "" : "cli" }}' wx:else  open-type="openSetting" bindopensetting='handleSetting' >设置允许保存图片</button>
+  
+  <view class='closecanvas {{ openBTn ? "" : "cli" }}' bindtap='closecanvas'>取消</view>
+</view>
+<view class="content" hidden='{{!iscanvas}}'>
+  <view class='userIcon'>
+    <view>
+      <!-- <open-data type="userAvatarUrl"></open-data> -->
+      <open-data type="userAvatarUrl" wx:if="{{!isUserinfo}}"></open-data>
+      <button  open-type="getUserInfo" wx:else bindgetuserinfo="getUserInfo">授权登录</button>
+    </view>  
+  </view>
+  <view class='userText userText_btn' wx:if="{{isUserinfo}}">
+  <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
+  点击获取头像
+  </view>
+   <view class='userText' wx:else>恭喜发财，大吉大利</view>
+  <view class='couner'>{{canPutforwardMoney}}<text>元</text></view>
+  <view class='couner_foot'>累计提现{{alreadyPutforwardMoney}}元</view>
+  <view class='withdraw' bindtap='putforwardmoney' wx:if = "{{canPutforwardMoney>=1 || IsWithdrawMoney==0&&canPutforwardMoney!=0 }}">立即提现</view>
+  <view class='insufficient' wx:else>满1元可提现</view>
+  <view class='friend_list'>
+      <view class='List_header'>
+          <view class='List_tit'>获奖记录</view>
+          <view class='List_rule'  bindtap='activityRule'>活动规则</view>
+      </view>
+      <view class='List_content'>
+          <view class='userList' wx:for="{{ownShareList}}"  wx:key="key">
+              <view class='userList_icon'><image src="{{item.headImage}}"></image></view>
+              <view class='userList_font'>
+                <view class='userList_name'>{{item.userName}}</view>
+                <view class='userList_date'>{{item.createTime}}</view>
+              </view>
+              <view class='userList_text'>为你增加了<text>{{item.amountMoney}}</text>元</view>
+          </view>
+          <view class='noShareList' wx:if="{{!ownShareList.length}}">
+              <text>您还没有获得奖励，赶快分享给好友吧~</text>
+          </view>
+      </view>
+  </view>
+</view> 
+<view class='share' wx:if="{{iscanvas}}" >
+  <view class='share_main' >
+    <view class='share_tit share_tit1'>邀请好友还能获得红包</view>
+    <view class='share_border'></view>
+   
+        <view class='wx_share'  wx:if ="{{ choice!=4 }}">
+             <button  open-type="getUserInfo" wx:if="{{isUserinfo}}" bindgetuserinfo="getUserInfo">授权登录</button>
+             <button  open-type="share" wx:else  type="primary" ></button>
+            <image src='https://ylbb-business.oss-cn-beijing.aliyuncs.com/wx_icon154534.png'></image>
+        </view> 
+        <view class='pyq_share'  wx:if ="{{ choice!=4 }}">
+            <button  open-type="getUserInfo" wx:if="{{isUserinfo}}" bindgetuserinfo="getUserInfo">授权登录</button>
+            <image bindtap='shareFriendCircle' src='https://ylbb-business.oss-cn-beijing.aliyuncs.com/wxpyq_icon3435453.png'></image>
+        </view> 
+        <view class='allShare' wx:if ="{{ choice==4 }}">
+             <button  open-type="getUserInfo" wx:if="{{isUserinfo}}" bindgetuserinfo="getUserInfo">授权登录</button>
+            <image bindtap='shareFriendCircle' src='https://ylbb-business.oss-cn-beijing.aliyuncs.com/wxpyq_icon3435453.png'></image>           
+        </view>
+  </view>  
+
+
+<!-- 获取用户信息 -->  
+<!-- <view class='getUserInfo' wx:if="{{isUserinfo}}"  >
+  <view class='UserInfo_main'>
+    <text>请点击授权登陆获取您的头像和微信名</text>
+     <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登录</button>
+  </view>
+</view> -->
+<view class='clickImage' wx:if="{{clickToxcx}}" bindtap='clickToxcx'>
+    <image src='https://ylbb-business.oss-cn-beijing.aliyuncs.com/hbdsadsadasas453453453.png'></image>
+</view>
+<!-- 活动规则 -->
+<view class='activityRule' wx:if="{{activityRule}}">
+      <view class='activityMain'>
+          
+          <text>提现成功后一般将在1-3个工作日到账</text>
+          <text>1.满1元可提现；</text>
+          <text> 2.每日提现上限1000元；</text>
+          <text>3.微信官方为保证资金安全要求，提现至微信需实名制；</text>
+          <text>4.如有疑问，请联系客服400-6321531</text>
+          <view class='activityRuleClose' bindtap='activityRuleClose'>确认</view>
+      </view>
+</view>
+</view>
